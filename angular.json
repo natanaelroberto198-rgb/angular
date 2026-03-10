@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "pw-data-binding": {
+    "pw3-ingressos-ui": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -24,14 +24,10 @@
                 "input": "public"
               }
             ],
-             "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
-            ],
-            "scripts": [
-                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            "styles": [
+              "src/material-theme.scss",
+              "src/styles.css"
             ]
-            
           },
           "configurations": {
             "production": {
@@ -61,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "pw-data-binding:build:production"
+              "buildTarget": "pw3-ingressos-ui:build:production"
             },
             "development": {
-              "buildTarget": "pw-data-binding:build:development"
+              "buildTarget": "pw3-ingressos-ui:build:development"
             }
           },
           "defaultConfiguration": "development"

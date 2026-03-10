@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+.app-header button {
+  margin: 0 16px;
+}
+
+.app-header button.mat-mdc-button {
+  color: white;
+}
+
+.app-header .spacer {
+  flex: 1 1 auto;
+}
+
+.app-header .mat-toolbar {
+  background-color: black;
+  color: white;
+  padding: 0 64px;
+}
