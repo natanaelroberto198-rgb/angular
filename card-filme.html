@@ -1,9 +1,9 @@
 <mat-card class="card-capa">
-	  <img mat-card-image src="" alt="Capa do filme">
+	  <img mat-card-image [src]="filme.capa" alt="Capa do filme">
 	  <mat-card-content>
 	    <ul>
-	      <li>NOME</li>
-	      <li>DURACAO min</li>
+	      <li>{{filme.nome}}</li>
+	      <li>{{filme.duracao}}</li>
 	    </ul>
 	  </mat-card-content>
 	  <mat-card-actions>
