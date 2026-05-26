@@ -1,0 +1,118 @@
+<app-banner src="assets/imagens/banner-cadastro.png">
+</app-banner>
+
+<app-container>
+<mat-card>
+  <form>
+    
+    <mat-card-title>
+      Crie sua conta
+    </mat-card-title>
+    
+    <section>
+      <div class="acoesPerfil">
+        <h2>Dados pessoais</h2>        
+      </div>
+    </section>
+    
+    <mat-card-content>
+      <div class="grid-container">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Nome</mat-label>
+          <input matInput placeholder="Nome">
+          <mat-error>Nome é obrigatório</mat-error>
+        </mat-form-field>
+        <div class="grid-item">
+          <mat-form-field appearance="outline">
+            <mat-label>Data de Nascimento</mat-label>
+            <input matInput [matDatepicker]="nascimento" placeholder="Data de Nascimento">
+            <mat-datepicker-toggle matSuffix [for]="nascimento"></mat-datepicker-toggle>
+            <mat-datepicker #nascimento></mat-datepicker>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>CPF</mat-label>
+            <input matInput placeholder="Digite seu CPF">
+          </mat-form-field>
+          
+          <mat-form-field appearance="outline">
+            <mat-label>Cidade</mat-label>
+            <input matInput placeholder="Digite sua cidade">
+          </mat-form-field>
+        </div>
+
+        <div class="grid-item">
+          <div class="radio-group">
+            <label>Gênero</label>
+            <mat-radio-group color="primary">
+              <mat-radio-button value="feminino">Feminino</mat-radio-button>
+              <mat-radio-button value="masculino">Masculino</mat-radio-button>
+              <mat-radio-button value="outro">Prefiro não informar</mat-radio-button>
+            </mat-radio-group>
+          </div>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Telefone</mat-label>
+            <input matInput placeholder="(XX) XXXX-XXXX">
+          </mat-form-field>
+          
+          <div class="drop-container">
+            <mat-form-field class="input-container" appearance="outline">
+              <mat-label>Estado</mat-label>
+              <mat-select>
+                <mat-option>Nenhum</mat-option>
+                <mat-option value="MG">MG</mat-option>
+                <mat-option value="PR">PR</mat-option>
+                <mat-option value="SP">SP</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+
+    <mat-divider></mat-divider>
+    
+    <div class="acessoPerfil">
+      <h2>Dados de acesso</h2>
+    </div>
+
+    <mat-card-content>
+      <div class="grid-container">
+        <div class="grid-item">
+        
+          <mat-form-field appearance="outline">
+            <mat-label>E-mail</mat-label>
+            <input matInput type="email" placeholder="Digite seu e-mail">
+          </mat-form-field>
+          
+          <mat-form-field appearance="outline">
+            <mat-label>Senha</mat-label>
+            <input matInput type="password" placeholder="Digite sua senha">
+          </mat-form-field>
+        </div>
+        
+        <div class="grid-item">
+          
+          <mat-form-field appearance="outline">
+            <mat-label>Confirmar E-mail</mat-label>
+            <input matInput placeholder="Digite seu e-mail novamente">           
+          </mat-form-field>
+          
+          <mat-form-field appearance="outline">
+            <mat-label>Confirmar Senha</mat-label>
+            <input matInput type="password" placeholder="Repita sua senha">          
+          </mat-form-field>
+
+        </div>
+      </div>
+
+      <mat-checkbox color="primary" class="full-width">Li e aceito os termos e condições deste cadastro *</mat-checkbox>
+
+    </mat-card-content>
+    <mat-card-actions class="full-width">
+      <button mat-flat-button color="primary">CADASTRAR </button>
+    </mat-card-actions>
+  </form>
+</mat-card>
+</app-container>

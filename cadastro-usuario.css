@@ -1,0 +1,41 @@
+
+app-container mat-card-actions button {
+    margin: 0 8px;
+}
+
+app-container mat-divider {
+    margin: 0 16px;
+    border-top-color: #79747E;
+    margin-top: 24px;
+}
+
+app-container h2 {
+    font-weight: 400;
+    font-size: 22px;
+    color: #1D1B20;
+    margin-left: 16px;
+}
+
+app-container .btn-editar {
+    background: #E6E0E9;
+}
+
+app-container button img {
+    vertical-align: middle;
+}
+
+app-container .acessoPerfil {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 16px 24px 0;
+}
+
+@media (max-width: 600px) {
+    app-container .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    app-container .full-width {
+        grid-column: 1;
+    }
+}
